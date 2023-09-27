@@ -1,24 +1,15 @@
 <!doctype html>
 <html>
 <head>
-    <title>Flappy Bird - PLAYCANVAS</title>
+    <title>Flappy Bird - Dora-exe</title>
 
-    <meta name="description" content="Flappy&#39;s Back! Guide Flappy Bird through as many pipes as you can. Made with @playcanvas" />
+    <meta name="description" content="Flappy&#39;s Back! Guide Flappy Bird through as many pipes as you can." />
     <meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover' />
-
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@playcanvas" />
-    <meta name="twitter:title" content="Flappy Bird" />
-    <meta name="twitter:description" content="Flappy&#39;s Back! Guide Flappy Bird through as many pipes as you can. Made with @playcanvas" />
-    <meta name="twitter:image" content="https://s3-eu-west-1.amazonaws.com/apps.playcanvas.com/DLgXf1zr/thumbs/360.jpg" />
-    <meta name="twitter:domain" content="https://playcanv.as/p/2OlkUaxF/" />
-
-    <meta property="og:url" content="https://playcanv.as/p/2OlkUaxF/" />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="Flappy Bird" />
-    <meta property="og:description" content="Flappy&#39;s Back! Guide Flappy Bird through as many pipes as you can. Made with @playcanvas">
-    <meta property="og:image" content="https://s3-eu-west-1.amazonaws.com/apps.playcanvas.com/DLgXf1zr/thumbs/360.jpg" />
-    <meta property="og:site_name" content="PlayCanvas" />
+    <!--<meta property="og:url" content="https://playcanv.as/p/2OlkUaxF/" />
+    <meta property="og:type" content="website" />-->
+    <meta property="og:title" content="Flappy Bird - Dora-exe" />
+    <meta property="og:description" content="Flappy&#39;s Back! Guide Flappy Bird through as many pipes as you can." />
+    
 
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
@@ -26,18 +17,10 @@
 
     <meta name="mobile-web-app-capable" content="yes">
 
-    <meta name="pc-url-home" content="https://playcanvas.com" />
+    <meta name="pc-url-home" content="" />
     <meta name="pc-onetrust-key" content="f91a844d-1f3a-40ee-8434-e5049aee38da" />
 
-    <link rel="icon" href="https://s3-eu-west-1.amazonaws.com/apps.playcanvas.com/DLgXf1zr/thumbs/180.jpg">
-
-    <link rel="manifest" href="manifest.json">
-
-    <link rel="kik-icon" href="https://s3-eu-west-1.amazonaws.com/apps.playcanvas.com/DLgXf1zr/thumbs/360.jpg">
-    <link rel="canonical" href="index.html">
-
-    <link rel="apple-touch-icon" href="https://s3-eu-west-1.amazonaws.com/apps.playcanvas.com/DLgXf1zr/thumbs/180.jpg" />
-
+    
     <link rel="stylesheet" href="https://playcanv.as/css/styles.css">
 
     <style>
@@ -55,19 +38,6 @@
                 scrolling='no'
                 frameBorder='0'>
         </iframe>
-    </div>
-
-    <div id='footer'>
-        <a class='title' href='https://playcanvas.com/' target='_blank'>
-            <div class='img'></div>
-        </a>
-
-        <div class='views'><img class='icon' src='https://playcanvas.com/static-assets/images/eye.png' /><span id="viewcount">16029342</span></div>
-
-        <div id='fullscreen'></div>
-
-        <div id='social'>
-        </div>
     </div>
 
     <!-- FULLSCREEN -->
@@ -182,57 +152,4 @@
         })();
     </script>
 
-    <!-- SHARE -->
-    <script type='text/javascript'>
-
-        function addNetwork(network, _class) {
-            var div = document.createElement("div");
-            div.classList.add("share");
-            div.classList.add(_class);
-            div.setAttribute("data-network", network);
-
-            var el = document.getElementById("social");
-            el.appendChild(div);
-        }
-
-
-        if (kik.enabled) {
-            function kik_share() {
-                kik.send({
-                    title: 'Flappy Bird',
-                    text: 'Flappy&#39;s Back! Guide Flappy Bird through as many pipes as you can. Made with @playcanvas',
-                    pic: 'https://s3-eu-west-1.amazonaws.com/apps.playcanvas.com/DLgXf1zr/thumbs/360.jpg',
-                    big: true,
-                });
-            };
-
-            addNetwork("kik", "kik");
-
-            var buttons = document.querySelectorAll("#social > .share.kik")
-            buttons[0].addEventListener('click', function () {
-                kik_share(this.getAttribute('data-network'));
-            });
-        } else {
-            addNetwork("facebook", "fb");
-            addNetwork("twitter", "tw");
-
-            var share = function(network) {
-                var title = document.title;
-                var href = window.location;
-                var text = document.head.querySelector('meta[name="description"]').getAttribute('content');
-                var tweet = text;
-                if (tweet.length > 110) {
-                    tweet = tweet.slice(0, 107) + '...';
-                }
-                var url = '';
-
-                switch(network) {
-                    case 'facebook':
-                        url = "https://facebook.com/sharer.php?u=" + encodeURIComponent(href) + "&t=" + encodeURIComponent(text);
-                        break;
-                    case 'twitter':
-                        url = "https://twitter.com/intent/tweet?text=" + encodeURIComponent(tweet) + "&url=" + encodeURIComponent(href)
-                        break;
-                }
-
-                
+   
